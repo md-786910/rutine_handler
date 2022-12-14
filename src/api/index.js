@@ -10,7 +10,7 @@ const getTopic = async () => {
       },
     });
     const data = await res.json();
-
+console.log(data)
     if (res.status === 200) {
       const topicData = data[0].topic;
       return topicData;
